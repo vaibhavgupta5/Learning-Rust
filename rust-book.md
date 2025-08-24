@@ -70,3 +70,19 @@
             func
         }
     }
+
+
+# Array
+
+    let mut vec = Vec::new();
+    vec.push(random);
+
+# Hashmaps
+
+    let mut hash = HashMap::new();
+    hash.insert(k: String::from("Vaibhav"), v: 20);
+    hash.get("vaibhav");
+
+# Print array or hashmap
+
+    print!("{:?}", vec );

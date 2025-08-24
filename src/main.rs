@@ -1,4 +1,4 @@
-use std::fs;
+use std::{collections::HashMap, fs};
 
 //This file might heavily change
 enum Shape {
@@ -72,6 +72,20 @@ vec.push(3);
 
 println!("Vector: {:?}", vec);
 
+
+//HashMaps
+
+let mut users = HashMap::new();
+
+users.insert("Vaibhav", 25);
+users.insert("Alice", 30);
+users.insert("Bob", 22);
+
+match users.get("Vaibhav") {
+    Some(age) => println!("Vaibhav's age is: {}", age),
+    None => println!("Vaibhav not found"),
+
+}
 }
 
 fn doSomething (s : &String){
